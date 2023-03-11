@@ -1,0 +1,136 @@
+@0    = ~Vulcano Migliorato! Pacchetto~
+@1    = ~Arco Angelico~
+@2    = ~Arco Angelico
+(Evocazione/Attrazione) 
+Livello: 9
+Raggio: 0 
+Durata: 18 round
+Tempo di Lancio: 4 
+Area d'Effetto: Se stesso
+Tiro Salvezza: Nessuno
+
+Questo incantesimo crea un arco extraplanare nelle mani del lanciatore. Quest'arma è +5 e le sue frecce causano potenti danni ed effetti alle sue vittime.~
+@3    = ~Frecce solforose di fuoco ardente +3~
+@4    = ~Frecce solforose di fuoco ardente +3
+
+Queste magiche frecce sono ricoperte di zolfo ardente, quindi causano sia danno da acido che da fuoco.
+
+STATISTICHE:
+
+THACO: +3
+Danno:  1D6+3, +2D6 da Acido, +1D8 da Fuoco
+Tipo di danno: proiettile (perforante)
+Peso: 0
+Mezzo di Lancio: Arco
+Non utilizzabile da:
+ Chierico
+ Druido
+ Mago~
+@5    = ~Golem di Ghiaccio~
+@6    = ~Drago Marrone~
+@7    = ~Impulso Magnetico~
+@8    = ~Impulso Magnetico
+(Invocazione)
+Livello: 9
+Raggio: 27 metri 
+Durata: Speciale
+Tempo di Lancio: 1
+Area d'Effetto: un raggio di 9 metri
+Tiro Salvezza: Neg.
+
+Questo incantesimo crea un enorme impulso che esploderà se qualcuno ci si avvicina, costringendo tutti coloro all'interno dell'area a fare un tiro salvezza contro incantesimi con una penalità di -6 oppure rimanere storditi.~
+@9    = ~Il Pianto del Fantasma~
+@10   = ~Il Pianto del Fantasma (Necromanzia) 
+Livello: 9
+Raggio: 0 
+Durata: Istantaneo
+Tempo di Lancio: 9
+Area d'Effetto: 9 metri di raggio
+Tiro Salvezza: Neg.
+
+Questo incantesimo evoca il pianto di un fantasma irrequieto per qualche secondo. Ogni creatura che sente il lamento deve effettuare un tiro salvezza a
+-5 o morire istantaneamente.~
+@11   = ~Evocazione di un Gigante~
+@12   = ~Evocazione di un Gigante
+(Evocazione/Attrazione) 
+Livello: 9
+Raggio: 36 metri 
+Durata: 10 round
+Tempo di Lancio: 5 
+Area d'Effetto: Speciale 
+Tiro Salvezza: Nessuno
+
+Questo incantesimo permette di evocare un resistente Gigante del Fuoco che aiuterà il lanciatore per 10 round. Il Gigante è un guerriero estremamente potente nella lotta corpo a corpo, ed inoltre possiede delle abilità magiche.~
+@13   = ~Auto-Metamorfosi Estrema~
+@14   = ~Auto-Metamorfosi Estrema
+(Alterazione) 
+Livello: 8
+Raggio: 0 
+Durata: 20 turni
+Tempo di Lancio: 5 
+Area d'Effetto: Lo stesso lanciatore 
+Tiro Salvezza: Nessuno
+
+Questo incantesimo modifica il corpo del lanciatore trasformandolo in una creatura potentissima scelta casualmente. Viceversa il lanciatore non potrà riottenere la sua forma originale per tutta la durata dell'incantesimo.~
+@15   = ~Gigante del Fuoco~
+@16   = ~Grande Spada Pesante~
+@17   = ~Lama del Vulcano +6~
+@18   = ~Sebbene sembri magica, questa grande spada é pesantissima.
+La sua lama é incandescente ed irradia un immenso potere. Nessuno a Saradush ha osato identificarla.~
+@19   = ~Lama del Vulcano +6
+
+Le origini di quest'arma sono sconosciute, forse é stata forgiata dallo stesso Dio del Fuoco.
+La sua lama è incandescente, ma l'impugnatura della spada é solamente un pò calda, quindi puoi tranquillamente maneggiare questa potente arma.
+
+STATISTICHE:
+
+Danno: 1D12+6, +4D4 di Danno da Fuoco
+Tipo di danno: tagliente
+
+Speciale:
++40% di Resistenza alla Magia
+100% di Resistenza al Fuoco
+Immunità a Fermare il Tempo
+
+Evoca un Elementale del Fuoco una volta al giorno
+Terremoto una volta al giorno
+Tempesta di Fuoco una volta al giorno 
+
+Peso: 45
+Fattore Velocità: 10
+Tipo di competenza: Spada a due mani
+Tipo: a due mani
+Richiede: 19 alla Forza
+Non utilizzabile da:
+ Druido
+ Chierico
+ Mago 
+ Ladro
+ Monaco~
+@20   = ~Zodesak~
+@21   = ~Cryonax~
+@22   = ~Il Basilisco Blu +2~
+@23   = ~Il Basilisco Blu +2
+
+Questa potente arma é stata creata dalla combinazione del ferro con le scaglie di una creatura leggendaria, il Basilisco Blu. Questa creatura era in grado di gelare il suo bersaglio con il suo sguardo, prima di trasformarlo in pietra. Uno sconosciuto generale di Tethyr ed il suo maggiordomo riuscirono ad uccidere la bestia gettando poi il cadavere della creatura nelle profondità di un lago.
+Le circostanze in cui si riuscì a creare quest'arma sono totalmente sconosciute, nessuno sa quando o come le scaglie del basilisco sono state recuperate dal lago.
+
+STATISTICHE:
+
+Danno: 1D6 +3, 
+Danno Addizionale:
++3 da freddo (nessun danno se si è protetti da salva contro soffio) 
+Speciale:
+Morte istantanea (pietrificazione)
+(nessun danno se si è protetti da salva contro soffio a +3)
+Tipo di danno: da schiacciamento
+Peso: 13
+Fattore Velocità: 6
+Tipo di competenza: Mazzafrusto/Morning Star
+Tipo: ad una mano
+Richiede: 13 alla Forza
+Non utilizzabile da:
+ Druido
+ Mago 
+ Ladro~
+@24   = ~Oggetti di Zodesak~

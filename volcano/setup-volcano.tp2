@@ -1,0 +1,192 @@
+BACKUP ~volcano/backup~        
+AUTHOR ~baronius@blackwyrmlair.net~ 
+
+VERSION ~v2.0~
+
+AUTO_TRA ~volcano\%s~
+
+LANGUAGE ~English~
+         ~English~
+         ~volcano\English\setup.tra~
+
+LANGUAGE ~Deutsch (Uebersetzung von Rumpelstilz)~
+         ~German~
+         ~volcano\German\setup.tra~
+       
+LANGUAGE ~Italian (by Ilot)~
+         ~Italian~
+         ~volcano\Italian\setup.tra~
+
+LANGUAGE ~Russian (Aerie.ru, updated by Prowler)~
+         ~Russian~
+         ~volcano\russian\setup.tra~
+
+BEGIN @0        
+COPY ~volcano/SUMGIA.eff~        ~override/SUMGIA.eff~         
+
+COPY ~VOLCANO/ANGBOW.itm~             ~override/ANGBOW.itm~         
+  SAY NAME1 @1 
+  SAY NAME2 @1 
+  SAY UNIDENTIFIED_DESC @2 
+  SAY DESC @2 
+
+COPY ~VOLCANO/arowb0.itm~             ~override/arowb0.itm~         
+  SAY NAME2 @3 
+  SAY DESC @4 
+
+COPY ~VOLCANO/ESP01.cre~              ~override/ESP01.cre~          
+
+COPY ~VOLCANO/ESP02.cre~              ~override/ESP02.cre~          
+
+COPY ~VOLCANO/ESP03.cre~              ~override/ESP03.cre~          
+  SAY NAME1 @5 
+  SAY NAME2 @5 
+
+COPY ~VOLCANO/ESP04.cre~              ~override/ESP04.cre~          
+
+COPY ~VOLCANO/ESP05.cre~              ~override/ESP05.cre~          
+  SAY NAME1 @6 
+  SAY NAME2 @6 
+
+COPY ~VOLCANO/SCRLB01.itm~            ~override/SCRLB01.itm~        
+  SAY NAME2 @7 
+  SAY DESC @8 
+
+COPY ~VOLCANO/SCRLB02.itm~            ~override/SCRLB02.itm~        
+  SAY NAME2 @9 
+  SAY DESC @10 
+
+COPY ~VOLCANO/SCRLB03.itm~            ~override/SCRLB03.itm~        
+  SAY NAME2 @11 
+  SAY DESC @12 
+
+COPY ~VOLCANO/SCRLB04.itm~            ~override/SCRLB04.itm~        
+  SAY NAME2 @13 
+  SAY DESC @14 
+
+COPY ~VOLCANO/SCRLB05.itm~            ~override/SCRLB05.itm~        
+  SAY NAME2 @1 
+  SAY DESC @2 
+
+COPY ~VOLCANO/SPWIB01.spl~            ~override/SPWIB01.spl~        
+  SAY NAME1 @7 
+  SAY UNIDENTIFIED_DESC @8 
+
+COPY ~VOLCANO/SPWIB02.spl~            ~override/SPWIB02.spl~        
+  SAY NAME1 @9 
+  SAY UNIDENTIFIED_DESC @10 
+
+COPY ~VOLCANO/SPWIB03.spl~            ~override/SPWIB03.spl~        
+  SAY NAME1 @11 
+  SAY UNIDENTIFIED_DESC @12 
+
+COPY ~VOLCANO/SPWIB04.spl~            ~override/SPWIB04.spl~        
+  SAY NAME1 @13 
+  SAY UNIDENTIFIED_DESC @14 
+
+COPY ~VOLCANO/SPWIB05.spl~            ~override/SPWIB05.spl~        
+  SAY NAME1 @1 
+  SAY UNIDENTIFIED_DESC @2 
+
+COPY ~VOLCANO/SUMGIA.cre~             ~override/SUMGIA.cre~         
+  SAY NAME1 @15 
+  SAY NAME2 @15 
+
+COPY ~VOLCANO/VOLCANO.itm~            ~override/VOLCANO.itm~        
+  SAY NAME1 @16 
+  SAY NAME2 @17 
+  SAY UNIDENTIFIED_DESC @18 
+  SAY DESC @19 
+
+COPY ~VOLCANO/zodesak.cre~            ~override/zodesak.cre~        
+  SAY NAME1 @20 
+  SAY NAME2 @20 
+
+COPY ~VOLCANO/ANGBOW.ITM~           ~override/ANGBOW.ITM~         
+  SAY NAME1 @1 
+  SAY NAME2 @1 
+  SAY UNIDENTIFIED_DESC @2 
+  SAY DESC @2 
+
+COPY ~VOLCANO/AROWB0.ITM~           ~override/AROWB0.ITM~         
+  SAY NAME2 @3 
+  SAY DESC @4 
+
+COPY ~VOLCANO/ESP01.CRE~            ~override/ESP01.CRE~          
+
+COPY ~VOLCANO/ESP02.CRE~            ~override/ESP02.CRE~          
+
+COPY ~VOLCANO/ESP03.CRE~            ~override/ESP03.CRE~          
+  SAY NAME1 @21 
+  SAY NAME2 @21 
+
+COPY ~VOLCANO/ESP04.CRE~            ~override/ESP04.CRE~          
+
+COPY ~VOLCANO/ESP05.CRE~            ~override/ESP05.CRE~          
+  SAY NAME1 @6 
+  SAY NAME2 @6 
+
+COPY ~VOLCANO/SCRLB01.ITM~          ~override/SCRLB01.ITM~        
+  SAY NAME2 @7 
+  SAY DESC @8 
+
+COPY ~VOLCANO/SCRLB02.ITM~          ~override/SCRLB02.ITM~        
+  SAY NAME2 @9 
+  SAY DESC @10 
+
+COPY ~VOLCANO/SCRLB03.ITM~          ~override/SCRLB03.ITM~        
+  SAY NAME2 @11 
+  SAY DESC @12 
+
+COPY ~VOLCANO/SCRLB04.ITM~          ~override/SCRLB04.ITM~        
+  SAY NAME2 @13 
+  SAY DESC @14 
+
+COPY ~VOLCANO/SCRLB05.ITM~          ~override/SCRLB05.ITM~        
+  SAY NAME2 @1 
+  SAY DESC @2 
+
+COPY ~VOLCANO/SPWIB01.SPL~          ~override/SPWIB01.SPL~        
+  SAY NAME1 @7 
+  SAY UNIDENTIFIED_DESC @8 
+
+COPY ~VOLCANO/SPWIB02.SPL~          ~override/SPWIB02.SPL~        
+  SAY NAME1 @9 
+  SAY UNIDENTIFIED_DESC @10 
+
+COPY ~VOLCANO/SPWIB03.SPL~          ~override/SPWIB03.SPL~        
+  SAY NAME1 @11 
+  SAY UNIDENTIFIED_DESC @12 
+
+COPY ~VOLCANO/SPWIB04.SPL~          ~override/SPWIB04.SPL~        
+  SAY NAME1 @13 
+  SAY UNIDENTIFIED_DESC @14 
+
+COPY ~VOLCANO/SPWIB05.SPL~          ~override/SPWIB05.SPL~        
+  SAY NAME1 @1 
+  SAY UNIDENTIFIED_DESC @2 
+
+COPY ~VOLCANO/SUMGIA.CRE~           ~override/SUMGIA.CRE~         
+  SAY NAME1 @15 
+  SAY NAME2 @15 
+
+COPY ~VOLCANO/VOLCANO.ITM~          ~override/VOLCANO.ITM~        
+  SAY NAME1 @16 
+  SAY NAME2 @17 
+  SAY UNIDENTIFIED_DESC @18 
+  SAY DESC @19 
+
+COPY ~VOLCANO/ZODESAK.CRE~          ~override/ZODESAK.CRE~        
+  SAY NAME1 @20 
+  SAY NAME2 @20 
+
+COPY ~VOLCANO/BLUEBAS.ITM~          ~override/BLUEBAS.ITM~        
+  SAY NAME2 @22 
+  SAY DESC @23 
+
+EXTEND_TOP ~ar5500.bcs~ ~volcano/ar5500e.baf~
+
+COPY ~volcano/ZODESAK.sto~        ~override/ZODESAK.sto~
+SAY STORE_NAME @24
+
+COMPILE ~volcano/ZODESAK.d~

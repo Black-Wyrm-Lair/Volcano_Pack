@@ -1,0 +1,136 @@
+@0    = ~Improved Volcano! Pack~
+@1    = ~Angelic Bow~
+@2    = ~Angelic Bow 
+(Conjuration/Summoning) 
+Level: 9
+Range: 0 
+Duration: 18 rounds
+Casting Time: 4 
+Area of Effect: Self
+Saving Throw: None
+
+This spell magically creates an extraplanar bow in the caster's hand. This weapon is +5 and its arrows cause powerful damage and effects on their victim.~
+@3    = ~Sulphurous Fire Arrows +3~
+@4    = ~Sulphorous Fire Arrows +3
+
+These magically crafted arrows were coated in hot sulphur, and therefore they cause both acid and fire damage.
+
+STATISTICS:
+
+THACO: +3
+Damage:  1D6+3, +2D6 Acid, +1D8 Fire
+Damage type:  missile (piercing)
+Weight:  0
+Launcher:  Bow
+Not usable by:
+ Cleric
+ Druid
+ Mage~
+@5    = ~Ice Golem~
+@6    = ~Brown Dragon~
+@7    = ~Magnetic Impulse~
+@8    = ~Magnetic Impulse
+(Evocation) 
+Level: 9
+Range: 30 yards 
+Duration: Special
+Casting Time: 1
+Area of Effect: 30' radius
+Saving Throw: Neg.
+
+This spell creates an enormous impulse which point will explode if somebody comes too close to it, causing all those within the area to make a save vs. spells at a -6 penalty or be stunned.~
+@9    = ~Weeping Ghost~
+@10   = ~Weeping Ghost (Necromancy) 
+Level: 9
+Range: 0 
+Duration: Instantaneous
+Casting Time: 9
+Area of Effect: 30-ft. radius
+Saving Throw: Neg.
+
+This spell summons the weeping of a restless ghost for a few seconds. Every creature hearing the cry must make a saving throw at -5 or die instantly.~
+@11   = ~Summon Giant~
+@12   = ~Summon Giant
+(Conjuration/Summoning) 
+Level: 9
+Range: 40 yards 
+Duration: 10  rounds
+Casting Time: 5 
+Area of Effect: Special 
+Saving Throw: None
+
+This spell summons a tough fire giant who will aid the caster for 10 rounds. The giant is an extremely powerful melee warrior, but has magical abilities as well.~
+@13   = ~Enormous Self-Polymorph~
+@14   = ~Enormous Self-Polymorph 
+(Alteration) 
+Level: 8
+Range: 0 
+Duration: 20 turns
+Casting Time: 5 
+Area of Effect: Self 
+Saving Throw: None
+
+This spell changes the caster's body to transform into the shape of randomly chosen, very powerful creature. On the contrary the caster is unable to regain his/her original form until the duration lasts.~
+@15   = ~Fire Giant~
+@16   = ~Heavy Greatsword~
+@17   = ~Volcano Blade +6~
+@18   = ~Although it seems magical, this greatsword is extremely heavy.
+Its blade is white-hot and radiates an immense power. Nobody in Saradush dared to identify it.~
+@19   = ~Volcano Blade +6
+
+The origin of this weapon is unknown, perhaps
+it was forged by the God of Fire himself.
+Its blade is white-hot, but the hilt of the sword is only warm, so you can easily wield this powerful weapon.
+
+STATISTICS:
+
+Damage:  1D12+6, +4D4 Fire Damage
+Damage type:  slashing
+
+Special:
++40% Magic Resistance
+100% Resistance to Fire
+Immunity to Timestop
+
+Conjure Fire Elemental once/day
+Earthquake once/day
+Firestorm once/day 
+
+Weight: 45
+Speed Factor: 10
+Proficiency Type: Two Handed sword
+Type:  2-handed
+Requires: 19 Strength
+Not Usable By:
+ Druid
+ Cleric
+ Mage 
+ Thief
+ Monk~
+@20   = ~Zodesak~
+@21   = ~Cryonax~
+@22   = ~The Blue Basilisk +2~
+@23   = ~The Blue Basilisk +2
+
+This powerful weapon was created from the combination of iron and the scales of a legendary creature, the Blue Basilisk. This creature had been able to freeze its target with its gaze, before turning it to stone. An unknown Tethyrian general and his butler managed to kill the beast, and they threw the creature's corpse to a deep lake.
+The circumstances of the creation of this weapon are totally unknown, noone knows when or how  the basilisk scales were taken from the lake.
+
+STATISTICS:
+
+Damage:  1D6 +3, 
+Additional damage:
++3 cold (save vs. breath for none) 
+Special:
+Instant stonedeath (petrification)
+(save vs. breath at +3 for none)
+Damage type:  crushing
+Weight: 13
+Speed Factor: 6
+Proficiency Type: Flail/Morningstar
+Type:  1-handed
+Requires: 13 Strength
+Not Usable By:
+ Druid
+ Mage 
+ Thief~
+@24   = ~Zodesak's items~

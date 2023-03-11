@@ -1,0 +1,239 @@
+@0    = ~Improved Volcano! Pack~
+@1    = ~Himmlischer Bogen~
+@2    = ~Himmlischer Bogen 
+(Herbeirufung/Beschwörung) 
+Grad: 9
+Reichweite: 0 
+Wirkungsdauer: 18 Runden
+Zeitaufwand: 4 
+Wirkungsbereich: Selbst
+Rettungswurf: keiner
+
+Dieser Zauberspruch erschafft auf magische Weise einen Ausserirdischen Bogen in der Hand des Zaubernden. Diese ist eine Waffe +5, und ihre Pfeile verursachen schwere Schäden und Auswirkungen bei dem Opfer.~
+@3    = ~Schwefelhaltige Feuerpfeile +3~
+@4    = ~Schwefelhaltige Feuerpfeile +3
+
+Diese magisch gefertigten Pfeile wurden mit heißem Schwefel überzogen, und sie verursachen deshalb sowohl Säure- als auch Feuerschaden.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+ETW0: +3
+Schaden:  1W6+3, +2W6 Säure, +1W8 Feuer
+Schadensart:  mit Stichwaffe durchbohren (Fernkampf)
+Gewicht:  0
+Schusswaffe:  Bogen
+Kann nicht verwendet werden von:
+ Klerikern
+ Druiden
+ Magiern~
+@5    = ~Eis Golem~
+@6    = ~Brauner Drache~
+@7    = ~Magnetischer Impuls~
+@8    = ~Magnetischer Impuls
+(Herbeirufung/Beschwörung) 
+Grad: 9
+Reichweite: 27,5 m 
+Wirkungsdauer: Speziell
+Zeitaufwand: 1
+Wirkungsbereich: 9 m Radius
+Rettungswurf: Nein
+
+Dieser Zauberspruch erschafft an einem Punkt einen enormen Impuls, welcher explodiert, wenn ihm jemand zu nahe kommt. Er bewirkt, dass alle innerhalb dieses Bereichs einen Rettungswurf -6 gegen Zaubersprüche machen müssen oder betäubt werden.~
+@9    = ~Weinender Geist~
+@10   = ~Weinender Geist (Nekromantie) 
+Grad: 9
+Reichweite: 0 
+Wirkungsdauer: Sofort
+Zeitaufwand: 9
+Wirkungsbereich: 9 m Radius
+Rettungswurf: Neg.
+
+Bei Wirken dieses Zauberspruches erschallt für einige Sekunden das Weinen eines Ruhelosen Geistes. Jeder im Wirkungsbereich muss einen Rettungswurf -5 machen oder er stirbt sofort.~
+@11   = ~Riesen beschwören~
+@12   = ~Riesen beschwören
+(Herbeirufung/Beschwörung) 
+Grad: 9
+Reichweite: 36,5 m 
+Wirkungsdauer: 10  Runden
+Zeitaufwand: 5 
+Wirkungsbereich: Speziell 
+Rettungswurf: keiner
+
+Dieser Zauberspruch ruft einen zähen Feuerriesen, der dem Anwender für 10 Runden hilft. Der Riese ist ein äußerst mächtiger, kampferprobter Krieger, der auch magische Fähigkeiten hat.~
+@13   = ~Gewaltige Selbstverwandlung ~
+@14   = ~Gewaltige Selbstverwandlung  
+(Veränderung) 
+Grad: 8
+Reichweite: 0 
+Wirkungsdauer: 200 Runden
+Zeitaufwand: 5 
+Wirkungsbereich: Selbst 
+Rettungswurf: keiner
+
+Dieser Zauberspruch verwandelt den Körper des Anwenders in eine zufällig gewählte, sehr mächtige Kreatur. Die Gegenteilige Wirkung zu erzielen, um seine/ihre Originalform zurückzuerhalten, ist der Anwender, bis die Wirkungsdauer endet, außerstande.~
+@15   = ~Weinender Geist (Nekromantie)) 
+Grad: 9
+Reichweite: 0 
+Wirkungsdauer: Sofort
+Zeitaufwand: 9
+Wirkungsbereich: 9 m Radius
+Rettungswurf: Nein
+
+Bei Wirken dieses Zauberspruches erschallt für einige Sekunden das Weinen eines Ruhelosen Geistes. Jeder im Wirkungsbereich muss einen Rettungswurf -5 machen oder er stirbt sofort.~
+@16   = ~Gewaltige Selbstverwandlung  
+(Veränderung) 
+Grad: 8
+Reichweite: 0 
+Wirkungsdauer: 200 Runden
+Zeitaufwand: 5 
+Wirkungsbereich: Selbst 
+Rettungswurf: keiner
+
+Dieser Zauberspruch verwandelt den Körper des Anwenders in eine zufällig gewählte, sehr mächtige Kreatur. Die gegenteilige Wirkung zu erzielen, um seine/ihre Originalform zurückzuerhalten, ist der Anwender, bis die Wirkungsdauer endet, außerstande.~
+@17   = ~Feuer Riese~
+@18   = ~Schweres Großschwert~
+@19   = ~Vulkan Klinge +6~
+@20   = ~Obwohl es magisch scheint, ist dieses Großschwert äußerst schwer. 
+Seine Klinge ist weiß glühend und es strahlt eine immense Macht aus. Niemand in Saradush wagte, es zu identifizieren.~
+@21   = ~Vulkan Klinge +6
+
+Der Ursprung dieser Waffe ist unbekannt, vielleicht wurde sie vom Feuergott selbst geschmiedet. 
+Ihre Klinge ist weiß glühend, aber das Heft des Schwertes ist nur warm, so dass Ihr diese mächtige Waffe leicht führen könnt.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden:  1W12+6, +4W4 Feuer Schaden
+Schadensart:  Aufschlitzen
+
+Besondere Fähigkeiten:
+Magischer Widerstand von +40%
+Feuerresistenz 100%
+Immunität gegen Zeitstopp
+
+Feuer-Elementar beschwören einmal/Tag
+Erdbeben  einmal/Tag
+Feuersturm  einmal/Tag
+
+Gewicht: 45
+Initiativefaktor: 10
+Fertigkeit: Zweihänder
+Typ:  2-händig
+Mindeststärke: 19
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern 
+ Dieben
+ Mönchen~
+@22   = ~Zodesak~
+@23   = ~Schwefelhaltige Feuer Pfeile +3~
+@24   = ~Schwefelhaltige Feuer Pfeile +3
+
+Diese magisch gefertigten Pfeile wurden mit heißem Schwefel überzogen und sie verursachen deshalb sowohl Säure- als auch Feuerschaden.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+ETW0: +3
+Schaden:  1W6+3, +2W6 Säure, +1W8 Feuer
+Schadensart:  mit Stichwaffe durchbohren (Fernkampf)
+Gewicht:  0
+Schusswaffe:  Bogen
+Kann nicht verwendet werden von:
+ Klerikern
+ Druiden
+ Magiern~
+@25   = ~Cryonax~
+@26   = ~Brown Dragon~
+@27   = ~Magnetischer Impuls
+(Herbeirufung/Beschwörung) 
+Grad: 9
+Reichweite: 27,5 m 
+Wirkungsdauer: Speziell
+Zeitaufwand: 1
+Wirkungsbereich: 9 m Radius
+Rettungswurf: Neg.
+
+Dieser Zauberspruch erschafft an einem Punkt einen enormen Impuls, welcher explodiert, wenn ihm jemand zu nahe kommt. Er bewirkt, dass alle innerhalb dieses Bereichs einen Rettungswurf -6 gegen Zaubersprüche machen müssen oder betäubt werden.~
+@28   = ~Weinender Geist (Nekromantie)
+Grad: 9
+Reichweite: 0 
+Wirkungsdauer: Sofort
+Zeitaufwand: 9
+Wirkungsbereich: 9 m Radius
+Rettungswurf: Neg.
+
+Bei wirken dieses Zauberspruches erschallt für einige Sekunden das Weinen eines Ruhelosen Geistes. Jeder im Wirkungsbereich muss einen Rettungswurf -5 machen oder er stirbt sofort.~
+@29   = ~Magnetischer Impuls
+(Herbeirufung/Beschwörung) 
+Grad: 9
+Reichweite: 27,5 m 
+Wirkungsdauer: Speziell
+Zeitaufwand: 1
+Wirkungsbereich: 9 m Radius
+Rettungswurf: Nein
+
+Dieser Zauberspruch erschafft an einem Punkt einen enormen Impuls, welcher explodiert. wenn ihm jemand zu nahe kommt. Er bewirkt, dass alle innerhalb dieses Bereichs einen Rettungswurf -6 gegen Zaubersprüche machen müssen oder betäubt werden.~
+@30   = ~Weinender Geist (Nekromantie)
+Grad: 9
+Reichweite: 0 
+Wirkungsdauer: Sofort
+Zeitaufwand: 9
+Wirkungsbereich: 9 m Radius
+Rettungswurf: Nein
+
+Bei wirken dieses Zauberspruches erschallt für einige Sekunden das Weinen eines Ruhelosen Geistes. Jeder im Wirkungsbereich muss einen Rettungswurf -5 machen oder er stirbt sofort.~
+@31   = ~Vulkan Klinge +6
+
+Der Ursprung dieser Waffe ist unbekannt, vielleicht wurde es vom Feuergott selbst geschmiedet. 
+Seine Klinge ist weiß glühend, aber das Heft des Schwertes ist nur warm, so dass Ihr diese mächtige Waffe leicht führen könnt.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden:  1W12+6, +4W4 Feuerschaden
+Schadensart:  Aufschlitzen
+
+Besondere Fähigkeiten:
+Magischer Widerstand von +40%
+Feuerresistenz 100%
+Immunität gegen Zeitstopp
+
+Feuer-Elementar beschwören  einmal/Tag
+Erdbeben  einmal/Tag
+Feuersturm  einmal/Tag
+
+Gewicht: 45
+Initiativefaktor: 10
+Fertigkeit: Zweihänder
+Typ:  2-händig
+Mindeststärke: 19
+Kann nicht verwendet werden von:
+ Druiden
+ Klerikern
+ Magiern 
+ Dieben
+ Mönchen~
+@32   = ~Der blaue Basilisk +2~
+@33   = ~Der blaue Basilisk +2
+
+Diese mächtige Waffe wurde aus der Kombination von Eisen und den Schuppen einer legendären Kreatur, dem blauen Basilisken, geschaffen. Diese Kreatur war in der Lage, ihr Ziel mit einem Blick einzufrieren, bevor sie es zu Stein verwandelte. Ein unbekannter Tethyrian General und sein Diener schafften es, die Bestie zu töten. Sie warfen die Leiche der Kreatur in einem tiefen See. 
+Die Umstände der Schaffung dieser Waffe sind völlig unbekannt, niemand weiß, wann oder wie die Basiliskenschuppen aus dem See geborgen wurden.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden:  1W6 +3, 
+zusätzlicher Schaden:
++3 Kälte (Rettungswurf gegen Atem für keinen) 
+Besondere Fähigkeiten:
+Sofortiger Steintod (Versteinerung)
+(Rettungswurf gegen Atem +3 für keinen)
+Schadensart:  zertrümmern
+Gewicht: 13
+Initiativefaktor: 6
+Fertigkeit: Flegel/Morgenstern
+Typ:  1-händig
+Mindeststärke: 13
+Kann nicht verwendet werden von:
+ Druiden
+ Magiern 
+ Dieben~
+@34   = ~Zodesaks Waren~
