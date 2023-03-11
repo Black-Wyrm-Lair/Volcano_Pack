@@ -1,5 +1,6 @@
 BACKUP ~volcano/backup~        
 AUTHOR ~baronius@blackwyrmlair.net~ 
+README ~volcano/readme/readme-volcano.txt~
 
 VERSION ~v2.0~
 
@@ -53,102 +54,96 @@ LANGUAGE ~Russian (Aerie.ru, updated by Prowler)~
 BEGIN @0
 REQUIRE_PREDICATE GAME_IS ~tob bg2ee eet~		~This mod requires BG2ToB, BG2EE or EET.~   
      
-COPY ~volcano/SUMGIA.eff~        ~override/SUMGIA.eff~         
+COPY ~volcano/eff/SUMGIA.eff~        ~override/SUMGIA.eff~         
 
-COPY ~VOLCANO/ANGBOW.itm~             ~override/ANGBOW.itm~         
+COPY ~VOLCANO/item/ANGBOW.itm~             ~override/ANGBOW.itm~         
   SAY NAME1 @1 
   SAY NAME2 @1 
   SAY UNIDENTIFIED_DESC @2 
   SAY DESC @2 
 
-COPY ~VOLCANO/AROWB0.itm~             ~override/AROWB0.itm~         
+COPY ~VOLCANO/item/AROWB0.itm~             ~override/AROWB0.itm~         
   SAY NAME2 @3 
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@4" END 
 
-COPY ~VOLCANO/ESP01.cre~              ~override/ESP01.cre~          
+COPY ~VOLCANO/cre/ESP01.cre~              ~override/ESP01.cre~          
 
-COPY ~VOLCANO/ESP02.cre~              ~override/ESP02.cre~          
+COPY ~VOLCANO/cre/ESP02.cre~              ~override/ESP02.cre~          
 
-COPY ~VOLCANO/ESP03.cre~              ~override/ESP03.cre~          
+COPY ~VOLCANO/cre/ESP03.cre~              ~override/ESP03.cre~          
   SAY NAME1 @5 
   SAY NAME2 @5 
 
-COPY ~VOLCANO/ESP04.cre~              ~override/ESP04.cre~          
+COPY ~VOLCANO/cre/ESP04.cre~              ~override/ESP04.cre~          
 
-COPY ~VOLCANO/ESP05.cre~              ~override/ESP05.cre~          
+COPY ~VOLCANO/cre/ESP05.cre~              ~override/ESP05.cre~          
   SAY NAME1 @6 
   SAY NAME2 @6 
 
-COPY ~VOLCANO/SCRLB01.itm~            ~override/SCRLB01.itm~        
+COPY ~VOLCANO/item/SCRLB01.itm~            ~override/SCRLB01.itm~        
   SAY NAME2 @7 
   SAY DESC @8 
 
-COPY ~VOLCANO/SCRLB02.itm~            ~override/SCRLB02.itm~        
+COPY ~VOLCANO/item/SCRLB02.itm~            ~override/SCRLB02.itm~        
   SAY NAME2 @9 
   SAY DESC @10 
 
-COPY ~VOLCANO/SCRLB03.itm~            ~override/SCRLB03.itm~        
+COPY ~VOLCANO/item/SCRLB03.itm~            ~override/SCRLB03.itm~        
   SAY NAME2 @11 
   SAY DESC @12 
 
-COPY ~VOLCANO/SCRLB04.itm~            ~override/SCRLB04.itm~        
+COPY ~VOLCANO/item/SCRLB04.itm~            ~override/SCRLB04.itm~        
   SAY NAME2 @13 
   SAY DESC @14 
 
-COPY ~VOLCANO/SCRLB05.itm~            ~override/SCRLB05.itm~        
+COPY ~VOLCANO/item/SCRLB05.itm~            ~override/SCRLB05.itm~        
   SAY NAME2 @1 
   SAY DESC @2 
 
-COPY ~VOLCANO/SPWIB01.spl~            ~override/SPWIB01.spl~        
+COPY ~VOLCANO/spl/SPWIB01.spl~            ~override/SPWIB01.spl~        
   SAY NAME1 @7 
   SAY UNIDENTIFIED_DESC @8 
 
-COPY ~VOLCANO/SPWIB02.spl~            ~override/SPWIB02.spl~        
+COPY ~VOLCANO/spl/SPWIB02.spl~            ~override/SPWIB02.spl~        
   SAY NAME1 @9 
   SAY UNIDENTIFIED_DESC @10 
 
-COPY ~VOLCANO/SPWIB03.spl~            ~override/SPWIB03.spl~        
+COPY ~VOLCANO/spl/SPWIB03.spl~            ~override/SPWIB03.spl~        
   SAY NAME1 @11 
   SAY UNIDENTIFIED_DESC @12 
 
-COPY ~VOLCANO/SPWIB04.spl~            ~override/SPWIB04.spl~        
+COPY ~VOLCANO/spl/SPWIB04.spl~            ~override/SPWIB04.spl~        
   SAY NAME1 @13 
   SAY UNIDENTIFIED_DESC @14 
 
-COPY ~VOLCANO/SPWIB05.spl~            ~override/SPWIB05.spl~        
+COPY ~VOLCANO/spl/SPWIB05.spl~            ~override/SPWIB05.spl~        
   SAY NAME1 @1 
   SAY UNIDENTIFIED_DESC @2 
 
-COPY ~VOLCANO/SUMGIA.cre~             ~override/SUMGIA.cre~         
+COPY ~VOLCANO/cre/SUMGIA.cre~             ~override/SUMGIA.cre~         
   SAY NAME1 @15 
   SAY NAME2 @15 
 
-COPY ~VOLCANO/VOLCANO.itm~            ~override/VOLCANO.itm~        
+COPY ~VOLCANO/item/VOLCANO.itm~            ~override/VOLCANO.itm~        
   SAY NAME1 @16 
   SAY NAME2 @17 
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@18" END 
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@19" END
 
-COPY ~VOLCANO/zodesak.cre~            ~override/zodesak.cre~        
+COPY ~VOLCANO/cre/zodesak.cre~            ~override/zodesak.cre~        
   SAY NAME1 @20 
-  SAY NAME2 @20 
+  SAY NAME2 @20
 
-COPY ~VOLCANO/ANGBOW.ITM~           ~override/ANGBOW.ITM~         
-  SAY NAME1 @1 
-  SAY NAME2 @1 
-  SAY UNIDENTIFIED_DESC @2 
-  SAY DESC @2
-
-COPY ~VOLCANO/BLUEBAS.ITM~		~override/BLUEBAS.ITM~        
+COPY ~VOLCANO/item/BLUEBAS.ITM~		~override/BLUEBAS.ITM~        
   SAY NAME2 @22
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@23" END
 
-EXTEND_TOP ~ar5500.bcs~ ~volcano/ar5500e.baf~
+EXTEND_TOP ~ar5500.bcs~ ~volcano/baf/ar5500e.baf~
 
-COPY ~volcano/ZODESAK.sto~		~override/ZODESAK.sto~
+COPY ~volcano/sto/ZODESAK.sto~		~override/ZODESAK.sto~
 SAY STORE_NAME @24
 
-COMPILE ~volcano/ZODESAK.d~
+COMPILE ~volcano/d/ZODESAK.d~
 
 
 // Additions
