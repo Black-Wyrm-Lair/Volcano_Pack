@@ -1,3 +1,6 @@
+@9001 = ~\([Oo]nly[ %tab%]+\)?[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+@9002 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+
 @0    = ~Improved Volcano! Pack~
 @1    = ~Angelic Bow~
 @2    = ~Angelic Bow 
