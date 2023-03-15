@@ -240,3 +240,32 @@ Kann nicht verwendet werden von:
  Magiern 
  Dieben~
 @34   = ~Zodesaks Waren~
+
+@25 = ~Angelic Bow
+
+This extraplanar bow is +5 weapon and its arrows cause powerful damage and effects on their victim.
+
+STATISTICS:
+
+Equipped abilities: 
+- Attack per round: Set to 4
+
+Combat abilities: 
+- Requires no ammunition
+- Inflicts 4d6 +4 magic damage to the target
+- 84 % chance
+  - of removing all magical effects from the target (as a level 22 spellcaster) (summoned weapons are always dispelled)
+  - to dispel all combat protection spells of level 6 or lower on the target (of level 6 or higher)
+  - to dispel all illusionary protection spells of level 8 or lower on the target (of level 6 or higher)
+  - to dispel all protection spells of level 6 or lower on the target (of level 6 or higher)
+- 16 % chance to disintegrate the target (save vs. Death at -2 neg.)
+
+Enchantment: +5
+THAC0: +14
+Damage Type: Piercing
+Speed Factor: 3
+Proficiency Type: Arc court
+Type: Two-Handed
+
+Weight: 2
+~

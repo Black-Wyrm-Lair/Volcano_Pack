@@ -57,10 +57,10 @@ REQUIRE_PREDICATE GAME_IS ~tob bg2ee eet~		~This mod requires BG2ToB, BG2EE or E
 COPY ~volcano/eff/SUMGIA.eff~        ~override/SUMGIA.eff~         
 
 COPY ~VOLCANO/item/ANGBOW.itm~             ~override/ANGBOW.itm~         
-  SAY NAME1 @1 
-  SAY NAME2 @1 
-  SAY UNIDENTIFIED_DESC @2 
-  SAY DESC @2 
+  SAY NAME1 @1
+  SAY NAME2 @1
+  SAY DESC @25
+  SAY UNIDENTIFIED_DESC @25
 
 COPY ~VOLCANO/item/AROWB0.itm~             ~override/AROWB0.itm~         
   SAY NAME2 @3 
@@ -71,62 +71,67 @@ COPY ~VOLCANO/cre/ESP01.cre~              ~override/ESP01.cre~
 COPY ~VOLCANO/cre/ESP02.cre~              ~override/ESP02.cre~          
 
 COPY ~VOLCANO/cre/ESP03.cre~              ~override/ESP03.cre~          
-  SAY NAME1 @5 
-  SAY NAME2 @5 
+  SAY NAME1 @5
+  SAY NAME2 @5
 
 COPY ~VOLCANO/cre/ESP04.cre~              ~override/ESP04.cre~          
 
 COPY ~VOLCANO/cre/ESP05.cre~              ~override/ESP05.cre~          
-  SAY NAME1 @6 
-  SAY NAME2 @6 
+  SAY NAME1 @6
+  SAY NAME2 @6
 
 COPY ~VOLCANO/item/SCRLB01.itm~            ~override/SCRLB01.itm~        
-  SAY NAME2 @7 
-  SAY DESC @8 
+  SAY NAME2 @7
+  SAY DESC @8
 
 COPY ~VOLCANO/item/SCRLB02.itm~            ~override/SCRLB02.itm~        
-  SAY NAME2 @9 
-  SAY DESC @10 
+  SAY NAME2 @9
+  SAY DESC @10
 
 COPY ~VOLCANO/item/SCRLB03.itm~            ~override/SCRLB03.itm~        
-  SAY NAME2 @11 
-  SAY DESC @12 
+  SAY NAME2 @11
+  SAY DESC @12
 
 COPY ~VOLCANO/item/SCRLB04.itm~            ~override/SCRLB04.itm~        
-  SAY NAME2 @13 
-  SAY DESC @14 
+  SAY NAME2 @13
+  SAY DESC @14
 
 COPY ~VOLCANO/item/SCRLB05.itm~            ~override/SCRLB05.itm~        
-  SAY NAME2 @1 
-  SAY DESC @2 
+  SAY NAME2 @1
+  SAY DESC @2
 
 COPY ~VOLCANO/spl/SPWIB01.spl~            ~override/SPWIB01.spl~        
-  SAY NAME1 @7 
-  SAY UNIDENTIFIED_DESC @8 
+  SAY NAME1 @7
+  SAY DESC @8
+  SAY UNIDENTIFIED_DESC @8
 
 COPY ~VOLCANO/spl/SPWIB02.spl~            ~override/SPWIB02.spl~        
-  SAY NAME1 @9 
-  SAY UNIDENTIFIED_DESC @10 
+  SAY NAME1 @9
+  SAY DESC @10
+  SAY UNIDENTIFIED_DESC @10
 
 COPY ~VOLCANO/spl/SPWIB03.spl~            ~override/SPWIB03.spl~        
-  SAY NAME1 @11 
-  SAY UNIDENTIFIED_DESC @12 
+  SAY NAME1 @11
+  SAY DESC @12
+  SAY UNIDENTIFIED_DESC @12
 
 COPY ~VOLCANO/spl/SPWIB04.spl~            ~override/SPWIB04.spl~        
-  SAY NAME1 @13 
-  SAY UNIDENTIFIED_DESC @14 
+  SAY NAME1 @13
+  SAY DESC @14
+  SAY UNIDENTIFIED_DESC @14
 
 COPY ~VOLCANO/spl/SPWIB05.spl~            ~override/SPWIB05.spl~        
-  SAY NAME1 @1 
-  SAY UNIDENTIFIED_DESC @2 
+  SAY NAME1 @1
+  SAY DESC @2
+  SAY UNIDENTIFIED_DESC @2
 
 COPY ~VOLCANO/cre/SUMGIA.cre~             ~override/SUMGIA.cre~         
-  SAY NAME1 @15 
-  SAY NAME2 @15 
+  SAY NAME1 @15
+  SAY NAME2 @15
 
 COPY ~VOLCANO/item/VOLCANO.itm~            ~override/VOLCANO.itm~        
-  SAY NAME1 @16 
-  SAY NAME2 @17 
+  SAY NAME1 @16
+  SAY NAME2 @17
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@18" END 
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@19" END
 
@@ -151,6 +156,7 @@ COMPILE ~volcano/d/ZODESAK.d~
 COPY_EXISTING ~ZODESAK.sto~ ~override/ZODESAK.sto~  // adds missing items to Zodesak shop
 	
 	LPF ADD_STORE_ITEM_EX
+	  INT_VAR stack=3 
         STR_VAR item_name=~SCRLB05~ position=~AFTER SCRLB04~ flags=~identified~ // Indique la position AFTER ou BEFORE tel ou tel objet (il suffit de regarder dans NearInfinity leurs emplacements) dans ce cas AROW01...
       END
     BUT_ONLY
