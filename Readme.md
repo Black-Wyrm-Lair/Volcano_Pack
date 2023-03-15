@@ -1,10 +1,6 @@
 # The Improved Volcano! Pack
 
-<<<<<<< Updated upstream
-![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20german%20%7C%20italian%20%7C%20russian%20%7C%20&color=informational)
-=======
 ![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20german%20%7C%20french%20%7C%20italian%20%7C%20russian%20%7C%20&color=informational)
->>>>>>> Stashed changes
 
 **Autor** : **Baronius**
 
