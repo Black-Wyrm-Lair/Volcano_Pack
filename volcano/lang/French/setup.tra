@@ -1,0 +1,314 @@
+@9001 = ~[Uu]tilisable\([ %tab%]+[Ss]eulement\|[ %tab%]+[Uu]niquement\)?[ %tab%]+[Pp]ar[ %tab%]*:~
+@9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
+
+@0    = ~Improved Volcano! Pack~
+
+@1    = ~L'arc de l'Ange~
+@2    = ~L'arc de l'Ange
+(Conjuration/Convocation)
+ 
+Niveau : 9
+Portée : 0 
+Durée : 18 rounds
+Temps d'incantation : 4 
+Zone d'effet : le lanceur
+Jet de sauvegarde : Aucun
+
+Cet arc venu d'un autre plan est considéré comme une arme +5 et ses flèches provoquent de violents dégâts aux effets variés.~
+
+@3    = ~Flèche de sulfure~
+@4    = ~Flèche de sulfure
+
+Ces flèches magiques ont été enduites de soufre brûlant, ce qui leur permet d'infliger simultanément des dégâts d'acide et de feu.
+
+PARAMÈTRES : 
+
+Capacités de charge : 
+- Inflige 2d6 points de dégâts d'acide à la cible
+- Inflige 1d8 points de dégâts de feu à la cible
+
+TAC0 : +3
+Dégâts : 1d6 +3
+Type de dégâts : Projectile
+Arme de jet : Arc
+
+Poids : 0
+
+Inutilisable par :
+ Clerc
+ Druide
+ Mage~
+ 
+@5    = ~Golem de Glace~
+@6    = ~Dragon brun~
+
+@7    = ~Impulsion magnétique~
+@8    = ~Impulsion magnétique
+(Évocation)
+
+Niveau : 9
+Portée : 27,5 m
+Durée : Special
+Temps d'incantation : 1
+Zone d'effet : 9 m de rayon
+Jet de sauvegarde : Annule
+
+Ce sort crée une orbe flottante qui explosera si quelqu'un s'en approche de trop près, la formidable impulsion qui en résulte obligera tous ceux qui se trouvent dans la zone à effectuer un jet de sauvegarde contre les sorts avec une pénalité de -6 ou être étourdis.~
+
+@9    = ~Lamentation~
+@10   = ~Lamentation
+(Nécromancie)
+
+Niveau : 9
+Portée : 0
+Durée : Instantanée
+Temps d'incantation : 9
+Zone d'effet : 9 m de rayon
+Jet de sauvegarde : Annule
+
+Ce sort invoque l'espace d'un instant, la lamentation d'une âme tourmentée. Toute les créatures qui entendent la plainte doivent réussir un jet de sauvegarde contre la mort à -5 ou mourir.~
+
+@11   = ~Convocation de géant~
+@12   = ~Convocation de géant
+(Conjuration/Convocation)
+
+Niveau : 9
+Portée : 36,5 m
+Durée : 10 rounds
+Temps d'incantation : 5 
+Zone d'effet : Special 
+Jet de sauvegarde : Aucun
+
+Ce sort invoque un géant du feu des plus coriaces, il prêtera main forte au magicien pendant 10 rounds. Ce colosse est un combattant de mêlée extrêmement puissant, mais possède également quelques capacités magiques.~
+
+@13   = ~Métamorphoses titanesques~
+@14   = ~Métamorphoses titanesques
+(Altération)
+
+Niveau : 8
+Portée : 0
+Durée : 20 tours
+Temps d'incantation : 5
+Zone d'effet : le lanceur 
+Jet de sauvegarde : Aucun
+
+Ce sortilège permet au lanceur de se métamorphoser, de manière aléatoire, en plusieurs créatures gigantesques et puissantes. 
+Notez que le jeteur de sorts sera incapable de retrouver sa forme originelle tant que la durée de l'enchantement n'est pas écoulée.~
+
+@15   = ~Géant du feu~
+
+@16   = ~Énorme épée à deux mains~
+@17   = ~La Lame volcanique~
+
+@18   = ~Cette épée extrêmement lourde est probablement enchantée. Sa lame chauffée à blanc dégage une puissance colossale.
+
+De Saradush à Amkethran personne n'a encore eu le courage de l'identifier.~
+@19   = ~La Lame volcanique
+
+Les origines de cette arme sont mystérieuses... pourrait-elle avoir été forgée par le dieu du feu en personne ?
+
+Sa lame est incandescente, mais la poignée de l'épée reste tiède, ce qui permet de manier cette arme à la puissance inouïe avec facilité.
+
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Immunité à l'arrêt du temps
+- Résistance à la magie : +40 %
+- Immunité au feu
+
+Capacités de charge : 
+- Conjuration d'élémentaire de feu (comme un lanceur de sorts de niveau 10) (1 fois par jour)
+- Tremblement de terre (comme un lanceur de sorts de niveau 10) (1 fois par jour)
+- Tempête de feu (comme un lanceur de sorts de niveau 10) (1 fois par jour)
+
+Capacités de combat : 
+- Inflige 4d4 points de dégâts de feu à la cible
+
+Enchantement : +6
+TAC0 : +6
+Dégâts : 1d12 +6
+Type de dégâts : Tranchant
+Facteur de vitesse : 6
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Poids : 45
+
+Nécessite : 
+- Force : 19
+
+Inutilisable par :
+ Druide
+ Clerc
+ Mage 
+ Voleur
+ Moine~
+@20   = ~Zodesak~
+@21   = ~Cryonax~
+@22   = ~Le Basilic d'azur~
+@23   = ~Le Basilic d'azur
+
+Cette arme redoutable a été créée en combinant l'acier aux écailles d'une créature légendaire, le Basilic d'azur. Cette créature était capable de geler sa cible avec son regard, avant de la transformer en pierre. Un général Téthyrien méconnu et son écuyer parvinrent à terrasser la bête, avant de se débarrasser de sa dépouille au beau milieu d'un lac abyssal.
+
+Les circonstances qui ont conduit à la création de cette arme sont tout aussi méconnues que le général, personne ne sait quand et comment les écailles de basilic ont été remontées des profondeurs.
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 3 points de dégâts de froid à la cible (jet de sauvegarde contre les souffles pour éviter)
+- Pétrifie la cible (jet de sauvegarde à +3 contre les souffles pour éviter)
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / morgenstern
+Type : Arme à 1 main
+
+Poids : 13
+
+Nécessite : 
+- Force : 13
+
+Inutilisable par :
+ Druide
+ Mage 
+ Voleur~
+@24   = ~Le magasin de Zodesak~
+
+@25 = ~L'arc de l'Ange
+
+Cet arc venu d'un autre plan est considéré comme une arme +5 et ses flèches provoquent de violents dégâts aux effets variés.
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Attaque par round : Passe à 4
+
+Capacités de combat : 
+- Ne nécessite pas de munitions
+- Inflige 4d6 +4 points de dégâts magiques à la cible
+- 84 % de chance
+  - de dissiper la magie sur la cible (comme un lanceur de sorts de niveau 22) (les armes invoquées sont toujours dissipées)
+  - de dissiper tous les sorts de protection de combat de niveau 6 ou inférieur sur la cible (de niveau 6 ou supérieur)
+  - de dissiper tous les sorts de protection illusoire de niveau 8 ou inférieur sur la cible (de niveau 6 ou supérieur)
+  - de dissiper tous les sorts de protection de niveau 6 ou inférieur sur la cible (de niveau 6 ou supérieur)
+- 16 % de chance de désintégrer la cible (jet de sauvegarde à -2 contre la paralysie, la mort et les poisons pour éviter)
+
+Enchantement : +5
+TAC0 : +14
+Type de dégâts : Perforant
+Facteur de vitesse : 3
+Type de compétence : Arc court
+Type : Arme à 2 mains
+
+Poids : 2
+~
+
+
+/* =============== *
+ *  WeiDU prompts  *
+ * =============== */
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES"
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"
+
+@-1040= "
+Veuillez choisir la langue dans laquelle vous souhaitez jouer au jeu.
+Si par la suite vous desirez jouer au jeu dans une langue differente, il vous
+faudra editer le fichier weidu.conf et reinstaller vos mods.
+"
+@-1041= "Tcheque"
+@-1042= "Allemand"
+@-1043= "Anglais"
+@-1044= "Espagnol"
+@-1045= "Francais"
+@-1046= "Italien"
+@-1047= "Polonais"
+@-1048= "Portugais"
+@-1049= "Turc"
+@-1050= "Japonais"
+@-1051= "Coreen"
+@-1052= "Chinois simplifie"
+@-1053= "Russe"
+@-1054= "Ukrainien"
+
+@-1060= "
+Ce jeu est disponible en plusieurs langues mais WeiDU ne sait pas laquelle a ete choisie quand ce mod a ete installe.
+
+Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe ce mod. Votre choix servira jusqu'a ce que WeiDU s'arrete mais ne sera pas memorise.
+"
+@-1061= "
+Utilisation de"
+@-1062= " et "
+
+@-1063= "INSTALLATION ABANDONNEE"
+@-1064= "Abandon de l'installation de ["
+@-1065= "], retour a l'etat anterieur"
+
+
+
+
+
