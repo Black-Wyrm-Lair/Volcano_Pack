@@ -46,6 +46,9 @@ Version 2.5 (15 march 2023)
 - Added Readme.md
 - Added french translation
 - Correct German setup.tra
+- Prefixes BAVOL
+- Add InfinityAutoPackager
+- Add metadata and label for Project Infinity
 
 Version 2.0 (31 October 2009) [UPDATED BY LEOMAR & CO.]
 - Added Italian translation by Ilot
