@@ -2,6 +2,7 @@
 @9002 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 
 @0    = ~Improved Volcano! Pack~
+
 @1    = ~Angelic Bow~
 @2    = ~Angelic Bow 
 (Conjuration/Summoning) 
@@ -13,6 +14,7 @@ Area of Effect: Self
 Saving Throw: None
 
 This spell magically creates an extraplanar bow in the caster's hand. This weapon is +5 and its arrows cause powerful damage and effects on their victim.~
+
 @3    = ~Sulphurous Fire Arrows +3~
 @4    = ~Sulphorous Fire Arrows +3
 
@@ -29,8 +31,10 @@ Not usable by:
  Cleric
  Druid
  Mage~
+ 
 @5    = ~Ice Golem~
 @6    = ~Brown Dragon~
+
 @7    = ~Magnetic Impulse~
 @8    = ~Magnetic Impulse
 (Evocation) 
@@ -42,6 +46,7 @@ Area of Effect: 30' radius
 Saving Throw: Neg.
 
 This spell creates an enormous impulse which point will explode if somebody comes too close to it, causing all those within the area to make a save vs. spells at a -6 penalty or be stunned.~
+
 @9    = ~Weeping Ghost~
 @10   = ~Weeping Ghost (Necromancy) 
 Level: 9
@@ -52,6 +57,7 @@ Area of Effect: 30-ft. radius
 Saving Throw: Neg.
 
 This spell summons the weeping of a restless ghost for a few seconds. Every creature hearing the cry must make a saving throw at -5 or die instantly.~
+
 @11   = ~Summon Giant~
 @12   = ~Summon Giant
 (Conjuration/Summoning) 
@@ -63,6 +69,7 @@ Area of Effect: Special
 Saving Throw: None
 
 This spell summons a tough fire giant who will aid the caster for 10 rounds. The giant is an extremely powerful melee warrior, but has magical abilities as well.~
+
 @13   = ~Enormous Self-Polymorph~
 @14   = ~Enormous Self-Polymorph 
 (Alteration) 
@@ -74,9 +81,12 @@ Area of Effect: Self
 Saving Throw: None
 
 This spell changes the caster's body to transform into the shape of randomly chosen, very powerful creature. On the contrary the caster is unable to regain his/her original form until the duration lasts.~
+
 @15   = ~Fire Giant~
+
 @16   = ~Heavy Greatsword~
 @17   = ~Volcano Blade +6~
+
 @18   = ~Although it seems magical, this greatsword is extremely heavy.
 Its blade is white-hot and radiates an immense power. Nobody in Saradush dared to identify it.~
 @19   = ~Volcano Blade +6
@@ -110,8 +120,10 @@ Not Usable By:
  Mage 
  Thief
  Monk~
+ 
 @20   = ~Zodesak~
 @21   = ~Cryonax~
+
 @22   = ~The Blue Basilisk +2~
 @23   = ~The Blue Basilisk +2
 
@@ -136,6 +148,7 @@ Not Usable By:
  Druid
  Mage 
  Thief~
+ 
 @24   = ~Zodesak's items~
 
 @25 = ~Angelic Bow
@@ -166,3 +179,5 @@ Type: Two-Handed
 
 Weight: 2
 ~
+
+@50 = ~This mod requires BG2ToB, BG2EE or EET.~

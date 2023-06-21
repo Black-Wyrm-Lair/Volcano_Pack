@@ -2,6 +2,7 @@
 @9002 = ~[Nn]on[ %tab%]+[Uu]tilizzabile[ %tab%]+[Dd]a[ %tab%]*:~
 
 @0    = ~Vulcano Migliorato! Pacchetto~
+
 @1    = ~Arco Angelico~
 @2    = ~Arco Angelico
 (Evocazione/Attrazione) 
@@ -13,6 +14,7 @@ Area d'Effetto: Se stesso
 Tiro Salvezza: Nessuno
 
 Questo incantesimo crea un arco extraplanare nelle mani del lanciatore. Quest'arma è +5 e le sue frecce causano potenti danni ed effetti alle sue vittime.~
+
 @3    = ~Frecce solforose di fuoco ardente +3~
 @4    = ~Frecce solforose di fuoco ardente +3
 
@@ -29,8 +31,10 @@ Non utilizzabile da:
  Chierico
  Druido
  Mago~
+ 
 @5    = ~Golem di Ghiaccio~
 @6    = ~Drago Marrone~
+
 @7    = ~Impulso Magnetico~
 @8    = ~Impulso Magnetico
 (Invocazione)
@@ -42,6 +46,7 @@ Area d'Effetto: un raggio di 9 metri
 Tiro Salvezza: Neg.
 
 Questo incantesimo crea un enorme impulso che esploderà se qualcuno ci si avvicina, costringendo tutti coloro all'interno dell'area a fare un tiro salvezza contro incantesimi con una penalità di -6 oppure rimanere storditi.~
+
 @9    = ~Il Pianto del Fantasma~
 @10   = ~Il Pianto del Fantasma (Necromanzia) 
 Livello: 9
@@ -53,6 +58,7 @@ Tiro Salvezza: Neg.
 
 Questo incantesimo evoca il pianto di un fantasma irrequieto per qualche secondo. Ogni creatura che sente il lamento deve effettuare un tiro salvezza a
 -5 o morire istantaneamente.~
+
 @11   = ~Evocazione di un Gigante~
 @12   = ~Evocazione di un Gigante
 (Evocazione/Attrazione) 
@@ -64,6 +70,7 @@ Area d'Effetto: Speciale
 Tiro Salvezza: Nessuno
 
 Questo incantesimo permette di evocare un resistente Gigante del Fuoco che aiuterà il lanciatore per 10 round. Il Gigante è un guerriero estremamente potente nella lotta corpo a corpo, ed inoltre possiede delle abilità magiche.~
+
 @13   = ~Auto-Metamorfosi Estrema~
 @14   = ~Auto-Metamorfosi Estrema
 (Alterazione) 
@@ -75,9 +82,12 @@ Area d'Effetto: Lo stesso lanciatore
 Tiro Salvezza: Nessuno
 
 Questo incantesimo modifica il corpo del lanciatore trasformandolo in una creatura potentissima scelta casualmente. Viceversa il lanciatore non potrà riottenere la sua forma originale per tutta la durata dell'incantesimo.~
+
 @15   = ~Gigante del Fuoco~
+
 @16   = ~Grande Spada Pesante~
 @17   = ~Lama del Vulcano +6~
+
 @18   = ~Sebbene sembri magica, questa grande spada é pesantissima.
 La sua lama é incandescente ed irradia un immenso potere. Nessuno a Saradush ha osato identificarla.~
 @19   = ~Lama del Vulcano +6
@@ -110,8 +120,10 @@ Non utilizzabile da:
  Mago 
  Ladro
  Monaco~
+ 
 @20   = ~Zodesak~
 @21   = ~Cryonax~
+
 @22   = ~Il Basilisco Blu +2~
 @23   = ~Il Basilisco Blu +2
 
@@ -136,6 +148,7 @@ Non utilizzabile da:
  Druido
  Mago 
  Ladro~
+ 
 @24   = ~Oggetti di Zodesak~
 
 @25 = ~Angelic Bow

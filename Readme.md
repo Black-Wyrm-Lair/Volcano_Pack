@@ -4,8 +4,7 @@
 
 **Autor** : **Baronius**
 
-Spells and Items for BGII: Throne of Bhaal :
-BGII: Throne of Bhaal, Baldur's Gate II: EE and the Enhanced Edition Trilogy (EET).
+Spells and Items for BGII: Throne of Bhaal, Baldur's Gate II: EE and the Enhanced Edition Trilogy (EET).
 
 
 ## Description:
@@ -39,13 +38,14 @@ Improved Volcano! Pack is installed)
 ## Version History:
 ----------------
 
-Version 3.0 (15 march 2023)
+Version 2.5 (15 march 2023)
 - Added EE / EET compatibility (Handle Charset and GW_fonction)
 - Correct SCRLB05.ITM was not purchasable in store
 - Added description for ANGBOW.ITM if call with CLUAConsole
 - Added more existing scrolls in stock
 - Added Readme.md
 - Added french translation
+- Correct German setup.tra
 
 Version 2.0 (31 October 2009) [UPDATED BY LEOMAR & CO.]
 - Added Italian translation by Ilot

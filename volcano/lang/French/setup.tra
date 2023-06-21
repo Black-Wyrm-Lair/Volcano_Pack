@@ -144,8 +144,10 @@ Inutilisable par :
  Mage 
  Voleur
  Moine~
+ 
 @20   = ~Zodesak~
 @21   = ~Cryonax~
+
 @22   = ~Le Basilic d'azur~
 @23   = ~Le Basilic d'azur
 
@@ -176,6 +178,7 @@ Inutilisable par :
  Druide
  Mage 
  Voleur~
+ 
 @24   = ~Le magasin de Zodesak~
 
 @25 = ~L'arc de l'Ange
@@ -206,6 +209,8 @@ Type : Arme à 2 mains
 
 Poids : 2
 ~
+
+@50 = ~This mod requires BG2ToB, BG2EE or EET.~
 
 
 /* =============== *
