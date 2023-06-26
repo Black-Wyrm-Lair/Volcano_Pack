@@ -7,15 +7,23 @@
 Spells and Items for BGII: Throne of Bhaal, Baldur's Gate II: EE and the Enhanced Edition Trilogy (EET).
 
 
+[Link to Mod Forum at The Black Wyrm's Lair](http://forums.blackwyrmlair.net/index.php?showtopic=5525)
+
+[Link to Mod thread at The Gibberlings Three](https://www.gibberlings3.net/forums/topic/36756-the-gate-project/)
+
+
 ## Description:
 ------------
 
 This spell&item pack adds a merchant to the village of Amkethran.
 This man (looks like a soldier) will stand near the Temple of Waukeen.
 He offers extremely powerful spells and items, of course for a high price. 
+
 (Note: such a very very powerful item content seems be popular for many players,
 but it does not reflect my notion of a mod that conforms with the game balance. 
+
 That is, I do not consider this mod as balanced in terms of the original game balance.
+
 It is for the fun of those players who like it. I usually don't install it.)
 
 
