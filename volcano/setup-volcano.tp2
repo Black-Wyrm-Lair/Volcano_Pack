@@ -59,6 +59,34 @@ LANGUAGE ~French~
 BEGIN @0
 LABEL ~Baronius-Volcano~
 REQUIRE_PREDICATE GAME_IS ~tob bg2ee eet~ @50 /* This mod requires BG2ToB, BG2EE or EET. */   
+
+
+/* ---------------------------------------------------- *
+ *  Copy BAMs or convert them to EE  *
+ * ---------------------------------------------------- */
+
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
+	INCLUDE ~%MOD_FOLDER%/lib/gw_convert_inventory_bam_to_ee.tpa~			// Loads function converting inventory BAMs to EE.
+	//OUTER_SPRINT file-exc ~ ~	// Special cases: unused inventory or description icons, and ability .bam don't need to be converted.
+	ACTION_BASH_FOR ~volcano/bam/~ ~^.+\.bam$~ BEGIN
+		ACTION_TO_LOWER %BASH_FOR_FILE%
+		ACTION_TO_LOWER %BASH_FOR_RES%
+		ACTION_IF (~%file-exc%~ STRING_CONTAINS_REGEXP ~%BASH_FOR_RES%~ = 1) BEGIN
+			COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+				LPF ~gw_convert_inventory_bam_to_ee~ END
+			BUT_ONLY
+		END ELSE BEGIN
+			COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+		END
+	END
+END ELSE BEGIN
+	COPY ~volcano/bam~ ~override~
+END
+
+
+/* ---------------------------------------------------- *
+ *  Files  *
+ * ---------------------------------------------------- */
      
 COPY ~volcano/eff/BAVOLIA.eff~        ~override/BAVOLIA.eff~         
 
@@ -140,6 +168,7 @@ COPY ~VOLCANO/item/VOLCANO.itm~            ~override/VOLCANO.itm~
   SAY NAME2 @17
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@18" END 
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@19" END
+    APPEND ~tooltip.2da~ ~VOLCANO    -1    15211    45054~
 
 COPY ~VOLCANO/cre/zodesak.cre~            ~override/zodesak.cre~        
   SAY NAME1 @20 

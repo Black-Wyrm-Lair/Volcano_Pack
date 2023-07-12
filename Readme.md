@@ -57,6 +57,8 @@ Version 2.5 (15 march 2023)
 - Prefixes BAVOL
 - Add InfinityAutoPackager
 - Add metadata and label for Project Infinity
+- Bam for items (add gw_convert_inventory_bam_to_ee)
+- Two tooltips for Volcano Blade capacity (the third cannot be implemented)
 
 Version 2.0 (31 October 2009) [UPDATED BY LEOMAR & CO.]
 - Added Italian translation by Ilot
