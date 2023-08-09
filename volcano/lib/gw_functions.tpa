@@ -28,7 +28,7 @@
  *  Reads variable GW_desc_to_update (@nn or #nnn) in .tra file, alters it to fit EE description format,       *
  *  then saves it as variable GW_desc_updated.                                                                 *
  * =========================================================================================================== *
- *  FUNCTION GW_WRITE_EE_ITM_DESCRIPTIONS: …CRIT les DESCRIPTIONS des OBJETS au format Enhanced Edition.       *
+ *  FUNCTION GW_WRITE_EE_ITM_DESCRIPTIONS: √âCRIT les DESCRIPTIONS des OBJETS au format Enhanced Edition.       *
  *                                         WRITES ITEM DESCRIPTIONS according to the game (classical or EE).   *
  * ----------------------------------------------------------------------------------------------------------- *
  *  Reads variables GW_desc_to_update and GW_undesc_to_update (@nnn or #nnn) in .tra file, alters them to fit  *
@@ -52,7 +52,7 @@ OUTER_SPRINT GW_desc_updated
 			INCLUDE ~.../inlined/GW_%GW_desc_to_update%.tpp~
 			OUTER_SPRINT usab @9001		// ~[Uu]niquement[ %tab%]+[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~ = ~[Oo]nly[ %tab%]+[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 			OUTER_SPRINT unus @9002		// ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~ = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
-			OUTER_PATCH_SAVE GW_desc_updated ~%GW_desc_updated%~ BEGIN	// Suppression de toutes les rÈfÈrences aux classes et aux kits pouvant ou pas utiliser l'objet. - Removes all classes and kits (un-)usability flags.
+			OUTER_PATCH_SAVE GW_desc_updated ~%GW_desc_updated%~ BEGIN	// Suppression de toutes les r√©f√©rences aux classes et aux kits pouvant ou pas utiliser l'objet. - Removes all classes and kits (un-)usability flags.
 				REPLACE_TEXTUALLY ~\(\([%LNL%%MNL%%WNL%][ %TAB%]*\(%usab%\|%unus%\)[ %TAB%]*\)\(\([%LNL%%MNL%%WNL%].*\)*\)?\)~  ~~
 			END
 		END ELSE BEGIN
@@ -88,7 +88,7 @@ BEGIN
 	// BG2 ou BGT
 	END ELSE BEGIN
 		PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_desc_to_update%" STR_CMP ~~) BEGIN
-			INNER_PATCH_SAVE GWdesc ~%GW_desc_to_update%~ BEGIN		// Suppression du premier caractËre (@ ou #) - Removes 1st character (@ or #).
+			INNER_PATCH_SAVE GWdesc ~%GW_desc_to_update%~ BEGIN		// Suppression du premier caract√®re (@ ou #) - Removes 1st character (@ or #).
 				REPLACE_TEXTUALLY ~^[@#]~  ~~
 			END
 			PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
@@ -98,7 +98,7 @@ BEGIN
 			END
 		END
 		PATCH_IF ("%GW_undesc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_undesc_to_update%" STR_CMP ~~) BEGIN
-			INNER_PATCH_SAVE GWundesc ~%GW_undesc_to_update%~ BEGIN	// Suppression du premier caractËre (@ ou #) - Removes 1st character (@ or #).
+			INNER_PATCH_SAVE GWundesc ~%GW_undesc_to_update%~ BEGIN	// Suppression du premier caract√®re (@ ou #) - Removes 1st character (@ or #).
 				REPLACE_TEXTUALLY ~^[@#]~  ~~
 			END
 			PATCH_IF ("%GW_undesc_to_update%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
@@ -340,7 +340,7 @@ END	// of DEFINE_PATCH_FUNCTION
 
 /* =================================================================================================================== *
  *  FUNCTION GW_ITEM_RESTRICT_USABILITY_EE: DEFINES special item usability restrictions (EE games)                     *
- *                                          INTERDIT L'UTILISATION D'UN OBJET ‡ un type de crÈature dans les jeux EE.  *
+ *                                          INTERDIT L'UTILISATION D'UN OBJET √† un type de cr√©ature dans les jeux EE.  *
  * ------------------------------------------------------------------------------------------------------------------- *
  *  #319 Usability: Item Usability : This effect restricts the item to creature(s) matching the object identifiers.    *
  *  The string to display in the description note is set in 0x2c.                                                      *
@@ -392,7 +392,7 @@ BEGIN
 			PATCH_IF ("%GW_kind%" STRING_COMPARE_CASE ~NAME~ = 0) BEGIN
 				SET GW_param2 = 10
 				PATCH_IF ("%GW_restrict%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("GW_restrict%" STR_CMP ~~) BEGIN
-					INNER_PATCH_SAVE GWrestrict ~%GW_restrict%~ BEGIN		// Suppression du premier caractËre (@ ou #) - Removes 1st character (@ or #).
+					INNER_PATCH_SAVE GWrestrict ~%GW_restrict%~ BEGIN		// Suppression du premier caract√®re (@ ou #) - Removes 1st character (@ or #).
 						REPLACE_TEXTUALLY ~^[@#]~  ~~
 					END
 					PATCH_IF ("%GW_restrict%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
@@ -400,12 +400,12 @@ BEGIN
 					END ELSE BEGIN
 						SET GW_param1 = EVAL "%GWrestrict%"
 					END
-				END ELSE BEGIN										// Sinon, on va chercher la rÈfÈrence dans le fichier dialog.tlk
+				END ELSE BEGIN										// Sinon, on va chercher la r√©f√©rence dans le fichier dialog.tlk
 					SET GW_param1 = EVAL "%GW_restrict%"
 				END
 			END		// of PATCH_IF ("%GW_kind%" STRING_COMPARE_CASE ~NAME~ = 0)
 
-		// Actor's scripting name case : If 'IDS File' is set to 11, the item is restricted to characters with the death variable specified by the resource field. TODO If òno death variable is specified in the resource field, then you are targeting player-created characters (e.g., CHARNAME).
+		// Actor's scripting name case : If 'IDS File' is set to 11, the item is restricted to characters with the death variable specified by the resource field. TODO If Àúno death variable is specified in the resource field, then you are targeting player-created characters (e.g., CHARNAME).
 		// ---------------------------
 			PATCH_IF ("%GW_kind%" STRING_COMPARE_CASE ~SCRIPT_NAME~ = 0) BEGIN
 				SET GW_param1 = 0
@@ -418,7 +418,7 @@ BEGIN
 			// Description note.
 			// -----------------
 			PATCH_IF ("%GW_mess319%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_mess319%" STR_CMP ~~) BEGIN
-				INNER_PATCH_SAVE GWspecial ~%GW_mess319%~ BEGIN		// Suppression du premier caractËre (@ ou #) - Removes 1st character (@ or #).
+				INNER_PATCH_SAVE GWspecial ~%GW_mess319%~ BEGIN		// Suppression du premier caract√®re (@ ou #) - Removes 1st character (@ or #).
 					REPLACE_TEXTUALLY ~^[@#]~  ~~
 				END
 				PATCH_IF ("%GW_mess319%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
@@ -426,7 +426,7 @@ BEGIN
 				END ELSE BEGIN
 					SET GW_special319 = EVAL "%GWspecial%"
 				END
-			END ELSE BEGIN										// Sinon, on va chercher la rÈfÈrence dans le fichier dialog.tlk
+			END ELSE BEGIN										// Sinon, on va chercher la r√©f√©rence dans le fichier dialog.tlk
 				SET GW_special319 = EVAL "%GW_mess319%"
 			END
 
@@ -444,7 +444,7 @@ END 			// of DEFINE_PATCH_FUNCTION
 
 /* =========================================================================================================================================== *
  *  FUNCTION GW_FIND_DLG_RESPONSE_STRING: LOOKS for state and transition numbers matching a strref in a dialog.                                *
- *                                        RECHERCHE de numÈros d'Ètat et de transition correspondant ‡ un strref dans un fichier de dialogue.  *
+ *                                        RECHERCHE de num√©ros d'√©tat et de transition correspondant √† un strref dans un fichier de dialogue.  *
  * ------------------------------------------------------------------------------------------------------------------------------------------- *
  *  STR_VAR                                                                                                                                    *
  *      - GW_string_dlg        = strref to be found (may be @nn, #nnn or nnn).                                                                 *
@@ -456,15 +456,15 @@ END 			// of DEFINE_PATCH_FUNCTION
 
 DEFINE_PATCH_FUNCTION ~GW_FIND_DLG_RESPONSE_STRING~
     STR_VAR GW_string_dlg = 0      // string que l'on cherche
-    RET     GW_transition_found	   // Variable indiquant que l'on a trouvÈ une correspondance ==> Y = strref found
-            GW_state_number        // NumÈro du dialogue
-            GW_transition_number   // NumÈro de la transition (rÈponse)
+    RET     GW_transition_found	   // Variable indiquant que l'on a trouv√© une correspondance ==> Y = strref found
+            GW_state_number        // Num√©ro du dialogue
+            GW_transition_number   // Num√©ro de la transition (r√©ponse)
 BEGIN
 
 	PATCH_IF ("%GW_string_dlg%" STR_CMP ~~) OR (GW_string_dlg >= 0) BEGIN
 
 		PATCH_IF ("%GW_string_dlg%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) BEGIN
-			INNER_PATCH_SAVE GW_strref ~%GW_string_dlg%~ BEGIN		// Suppression du premier caractËre (@ ou #) - Removes 1st character (@ or #).
+			INNER_PATCH_SAVE GW_strref ~%GW_string_dlg%~ BEGIN		// Suppression du premier caract√®re (@ ou #) - Removes 1st character (@ or #).
 				REPLACE_TEXTUALLY ~^[@#]~  ~~
 			END
 			PATCH_IF ("%GW_string_dlg%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
@@ -494,7 +494,7 @@ BEGIN
 				READ_LONG ("%GW_offstates%" +       (state * 0x10)) GW_state_string         // Actor response text (i.e. what the non-player character says to the party)
 				READ_LONG ("%GW_offstates%" + 0x4 + (state * 0x10)) GW_index_first_response // Index of the first transition corresponding to this state (i.e. the index in the transition table of the first potential response the party can make in this state)
 				READ_LONG ("%GW_offstates%" + 0x8 + (state * 0x10)) GW_state_num_response   // Number of transitions corresponding to this state (i.e. how many possible responses are there to this state). A consecutive range of transitions in the transition table are assigned to this state, starting from 'first', as given by the previous field, ranging up to (but not including) 'first'+'count'.
-//				PATCH_PRINT ~	CONTROL FUNCTION GW_FIND_DLG_RESPONSE_STRING : %SOURCE_RES%  -  State #%state% = %GW_state_string%	-  Nb responses = %GW_state_num_response%  -  Index 1∞ rÈponse = %GW_index_first_response%.~
+//				PATCH_PRINT ~	CONTROL FUNCTION GW_FIND_DLG_RESPONSE_STRING : %SOURCE_RES%  -  State #%state% = %GW_state_string%	-  Nb responses = %GW_state_num_response%  -  Index 1¬∞ r√©ponse = %GW_index_first_response%.~
 
 				FOR (response = 0 ; response < GW_state_num_response ; ++response) BEGIN
 					READ_LONG ("%GW_offresponse%" + 0x4 + ("%GW_index_first_response%" * 0x20) + (response * 0x20)) GW_response_string
@@ -519,16 +519,16 @@ END // of DEFINE_PATCH_FUNCTION
 
 /* ========================================================================================================= *
  *  FUNCTION GW_FIND_FATESP_IMOEN_TRANSITION : LOOKS for state and transition numbers in fatesp.dlg.         *
- *                                             RECHERCHE de numÈros de state et transition dans fatesp.dlg.  *
+ *                                             RECHERCHE de num√©ros de state et transition dans fatesp.dlg.  *
  * --------------------------------------------------------------------------------------------------------- *
  *  This function will insert Hubelpot before Imoen using fatesp_string variable defined in ALWAYS block):   *
  *  #65017 = ~Bring me Imoen, the thief/mage.~ (classical and EE games).                                     *
  * ========================================================================================================= */
 
 DEFINE_ACTION_FUNCTION ~GW_FIND_FATESP_IMOEN_TRANSITION~
-    RET     GW_transition_found	   // Variable indiquant que l'on a trouvÈ une correspondance ==> Y = strref found
-            GW_state_number        // NumÈro du dialogue - STATE number
-            GW_transition_number   // NumÈro de la transition (rÈponse) - TRANSITION number
+    RET     GW_transition_found	   // Variable indiquant que l'on a trouv√© une correspondance ==> Y = strref found
+            GW_state_number        // Num√©ro du dialogue - STATE number
+            GW_transition_number   // Num√©ro de la transition (r√©ponse) - TRANSITION number
 BEGIN
 
 	COPY_EXISTING - ~fatesp.dlg~ ~override~

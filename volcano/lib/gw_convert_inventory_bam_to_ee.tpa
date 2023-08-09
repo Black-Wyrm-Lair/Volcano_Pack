@@ -1,6 +1,6 @@
 /* ================================================================================================================================================================= *
  *  Concept borrowed from Sam's BAM Batcher mod v2.4.2 to convert inventory BAMs to EE games. From Gwendolyne's original code, modified by Sam.                      *
- *  Code emprunté au mod BAM Batcher v2.4.2 de Sam pour convertir les fichiers BAM d'inventaire au format EE. D'après un code original de Gwendolyne.                *
+ *  Code empruntÃ© au mod BAM Batcher v2.4.2 de Sam pour convertir les fichiers BAM d'inventaire au format EE. D'aprÃ¨s un code original de Gwendolyne.                *
  *                                                                                                                                                                   *
  *  Source: https://www.gibberlings3.net/forums/topic/28823-merchant-mods/?do=findComment&comment=254149                                                             *
  *                                                                                                                                                                   *
@@ -9,9 +9,9 @@
  *  have two sequences, the first containing the "large" inventory icon frame and the second containing the "small" inventory icon frame to be processed.            *
  *  Inventory icon BAMs in the /bam folder that meet these requirements are patched and saved back to the override folder.                                           *
  * ----------------------------------------------------------------------------------------------------------------------------------------------------------------- *
- *  Cette fonction permet de modifier les fichiers BAM d'icônes d'inventaire afin que les jeux améliorés (EE) affichent à la fois leurs grandes et leurs petites     *
- *  icônes. Ces fichiers comportent deux séquences, la première représentant la grande icône et la seconde la petite. Les fichiers BAM du répertoire /bam répondant  *
- *  à ces caractéristiques sont modifiés et sauvegardés dans le répertoire override.                                                                                 *
+ *  Cette fonction permet de modifier les fichiers BAM d'icÃ´nes d'inventaire afin que les jeux amÃ©liorÃ©s (EE) affichent Ã  la fois leurs grandes et leurs petites     *
+ *  icÃ´nes. Ces fichiers comportent deux sÃ©quences, la premiÃ¨re reprÃ©sentant la grande icÃ´ne et la seconde la petite. Les fichiers BAM du rÃ©pertoire /bam rÃ©pondant  *
+ *  Ã  ces caractÃ©ristiques sont modifiÃ©s et sauvegardÃ©s dans le rÃ©pertoire override.                                                                                 *
  * ================================================================================================================================================================= */
 
 DEFINE_PATCH_FUNCTION ~gw_convert_inventory_bam_to_ee~ BEGIN

@@ -1,8 +1,7 @@
 IF
-	Global("ZodesakHere","Global",0)
+    Global("ZodesakHere","Global",0)
 THEN
-	RESPONSE #100
-		CreateCreature("Zodesak",[2853.2331],0)
-		SetGlobal("ZodesakHere","GLOBAL",1)
+    RESPONSE #100
+        CreateCreature("Zodesak",[2853.2331],0)
+        SetGlobal("ZodesakHere","GLOBAL",1)
 END
-
