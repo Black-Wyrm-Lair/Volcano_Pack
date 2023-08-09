@@ -1,12 +1,12 @@
-BACKUP ~volcano/backup~        
+BACKUP ~volcano/backup~
 AUTHOR ~baronius : http://forums.blackwyrmlair.net/index.php?showtopic=5525~ 
 README ~volcano/readme/readme-volcano.txt~
 
 VERSION ~v2.5~
 
-ALWAYS	
+ALWAYS
 
-			//Copies tra files into the autotra-folder (to leave the originals untouched)
+    // Copies tra files into the autotra-folder (to leave the originals untouched)
     DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
       COPY ~volcano/lang/English~  ~volcano/lang/autotra/%LANGUAGE%~
       COPY ~volcano/lang/%LANGUAGE%~  ~volcano/lang/autotra/%LANGUAGE%~
@@ -14,24 +14,23 @@ ALWAYS
 
     LAF autotra_workaround END
 
+// ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
 
-//  ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
-
- ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
+ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
 
     LAF HANDLE_CHARSETS
       INT_VAR
         infer_charsets = 1
       STR_VAR
         tra_path = EVAL ~volcano/lang/autotra~
-//        noconvert_array = fl#noconvert
+        // noconvert_array = fl#noconvert
         reload_array = fl#reload
-	END
+    END
 
-//
+
 INCLUDE ~volcano/lib/gw_functions.tpa~
 
-END	// of ALWAYS block
+END // of ALWAYS block
 
 AUTO_TRA ~volcano/lang/autotra/%s~
 
@@ -50,7 +49,7 @@ LANGUAGE ~Italian (by Ilot)~
 LANGUAGE ~Russian (Aerie.ru, updated by Prowler)~
          ~Russian~
          ~volcano/lang/russian/setup.tra~
-		 
+         
 LANGUAGE ~French~
          ~French~
          ~volcano/lang/English/setup.tra~
@@ -59,130 +58,124 @@ LANGUAGE ~French~
 BEGIN @0
 DESIGNATED 0
 LABEL ~Baronius-Volcano~
-REQUIRE_PREDICATE GAME_IS ~tob bg2ee eet~ @50 /* This mod requires BG2ToB, BG2EE or EET. */   
+REQUIRE_PREDICATE GAME_IS ~tob bg2ee eet~ @50  // This mod requires BG2ToB, BG2EE or EET.
 
-
-/* ---------------------------------------------------- *
- *  Copy BAMs or convert them to EE  *
- * ---------------------------------------------------- */
+// Copy BAMs or convert them to EE  *
 
 ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
-	INCLUDE ~%MOD_FOLDER%/lib/gw_convert_inventory_bam_to_ee.tpa~			// Loads function converting inventory BAMs to EE.
-	//OUTER_SPRINT file-exc ~ ~	// Special cases: unused inventory or description icons, and ability .bam don't need to be converted.
-	ACTION_BASH_FOR ~volcano/bam/~ ~^.+\.bam$~ BEGIN
-		ACTION_TO_LOWER %BASH_FOR_FILE%
-		ACTION_TO_LOWER %BASH_FOR_RES%
-		ACTION_IF (~%file-exc%~ STRING_CONTAINS_REGEXP ~%BASH_FOR_RES%~ = 1) BEGIN
-			COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
-				LPF ~gw_convert_inventory_bam_to_ee~ END
-			BUT_ONLY
-		END ELSE BEGIN
-			COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
-		END
-	END
+    INCLUDE ~%MOD_FOLDER%/lib/gw_convert_inventory_bam_to_ee.tpa~ // Loads function converting inventory BAMs to EE.
+    //OUTER_SPRINT file-exc ~ ~ // Special cases: unused inventory or description icons, and ability .bam don't need to be converted.
+    ACTION_BASH_FOR ~volcano/bam/~ ~^.+\.bam$~ BEGIN
+        ACTION_TO_LOWER %BASH_FOR_FILE%
+        ACTION_TO_LOWER %BASH_FOR_RES%
+        ACTION_IF (~%file-exc%~ STRING_CONTAINS_REGEXP ~%BASH_FOR_RES%~ = 1) BEGIN
+            COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+                LPF ~gw_convert_inventory_bam_to_ee~ END
+            BUT_ONLY
+        END ELSE BEGIN
+            COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+        END
+    END
 END ELSE BEGIN
-	COPY ~volcano/bam~ ~override~
+    COPY ~volcano/bam~ ~override~
 END
 
+// Files
 
-/* ---------------------------------------------------- *
- *  Files  *
- * ---------------------------------------------------- */
-     
-COPY ~volcano/eff/BAVOLIA.eff~        ~override/BAVOLIA.eff~         
+COPY ~volcano/eff/BAVOLIA.eff~        ~override/BAVOLIA.eff~
 
-COPY ~VOLCANO/item/ANGBOW.itm~             ~override/ANGBOW.itm~         
+COPY ~VOLCANO/item/ANGBOW.itm~             ~override/ANGBOW.itm~
   SAY NAME1 @1
   SAY NAME2 @1
   SAY DESC @25
   SAY UNIDENTIFIED_DESC @25
 
-COPY ~VOLCANO/item/BAVOLAR.itm~             ~override/BAVOLAR.itm~         
+COPY ~VOLCANO/item/BAVOLAR.itm~             ~override/BAVOLAR.itm~
   SAY NAME2 @3 
-  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@4" END 
+  LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@4" END
 
-COPY ~VOLCANO/cre/BAVOL01.cre~              ~override/BAVOL01.cre~          
+COPY ~VOLCANO/cre/BAVOL01.cre~              ~override/BAVOL01.cre~
 
-COPY ~VOLCANO/cre/BAVOL02.cre~              ~override/BAVOL02.cre~          
+COPY ~VOLCANO/cre/BAVOL02.cre~              ~override/BAVOL02.cre~
 
-COPY ~VOLCANO/cre/BAVOL03.cre~              ~override/BAVOL03.cre~          
+COPY ~VOLCANO/cre/BAVOL03.cre~              ~override/BAVOL03.cre~
   SAY NAME1 @5
   SAY NAME2 @5
 
-COPY ~VOLCANO/cre/BAVOL04.cre~              ~override/BAVOL04.cre~          
+COPY ~VOLCANO/cre/BAVOL04.cre~              ~override/BAVOL04.cre~
 
-COPY ~VOLCANO/cre/BAVOL05.cre~              ~override/BAVOL05.cre~          
+COPY ~VOLCANO/cre/BAVOL05.cre~              ~override/BAVOL05.cre~
   SAY NAME1 @6
   SAY NAME2 @6
 
-COPY ~VOLCANO/item/BAVOL01.itm~            ~override/BAVOL01.itm~        
+COPY ~VOLCANO/item/BAVOL01.itm~            ~override/BAVOL01.itm~
   SAY NAME2 @7
   SAY DESC @8
 
-COPY ~VOLCANO/item/BAVOL02.itm~            ~override/BAVOL02.itm~        
+COPY ~VOLCANO/item/BAVOL02.itm~            ~override/BAVOL02.itm~
   SAY NAME2 @9
   SAY DESC @10
 
-COPY ~VOLCANO/item/BAVOL03.itm~            ~override/BAVOL03.itm~        
+COPY ~VOLCANO/item/BAVOL03.itm~            ~override/BAVOL03.itm~
   SAY NAME2 @11
   SAY DESC @12
 
-COPY ~VOLCANO/item/BAVOL04.itm~            ~override/BAVOL04.itm~        
+COPY ~VOLCANO/item/BAVOL04.itm~            ~override/BAVOL04.itm~
   SAY NAME2 @13
   SAY DESC @14
 
-COPY ~VOLCANO/item/BAVOL05.itm~            ~override/BAVOL05.itm~        
+COPY ~VOLCANO/item/BAVOL05.itm~            ~override/BAVOL05.itm~
   SAY NAME2 @1
   SAY DESC @2
 
-COPY ~VOLCANO/spl/BAVOB01.spl~            ~override/BAVOB01.spl~        
+COPY ~VOLCANO/spl/BAVOB01.spl~            ~override/BAVOB01.spl~
   SAY NAME1 @7
   SAY DESC @8
   SAY UNIDENTIFIED_DESC @8
 
-COPY ~VOLCANO/spl/BAVOB02.spl~            ~override/BAVOB02.spl~        
+COPY ~VOLCANO/spl/BAVOB02.spl~            ~override/BAVOB02.spl~
   SAY NAME1 @9
   SAY DESC @10
   SAY UNIDENTIFIED_DESC @10
 
-COPY ~VOLCANO/spl/BAVOB03.spl~            ~override/BAVOB03.spl~        
+COPY ~VOLCANO/spl/BAVOB03.spl~            ~override/BAVOB03.spl~
   SAY NAME1 @11
   SAY DESC @12
   SAY UNIDENTIFIED_DESC @12
 
-COPY ~VOLCANO/spl/BAVOB04.spl~            ~override/BAVOB04.spl~        
+COPY ~VOLCANO/spl/BAVOB04.spl~            ~override/BAVOB04.spl~
   SAY NAME1 @13
   SAY DESC @14
   SAY UNIDENTIFIED_DESC @14
 
-COPY ~VOLCANO/spl/BAVOB05.spl~            ~override/BAVOB05.spl~        
+COPY ~VOLCANO/spl/BAVOB05.spl~            ~override/BAVOB05.spl~
   SAY NAME1 @1
   SAY DESC @2
   SAY UNIDENTIFIED_DESC @2
 
-COPY ~VOLCANO/cre/BAVOLIA.cre~             ~override/BAVOLIA.cre~         
+COPY ~VOLCANO/cre/BAVOLIA.cre~             ~override/BAVOLIA.cre~
   SAY NAME1 @15
   SAY NAME2 @15
 
-COPY ~VOLCANO/item/VOLCANO.itm~            ~override/VOLCANO.itm~        
+COPY ~VOLCANO/item/VOLCANO.itm~            ~override/VOLCANO.itm~
   SAY NAME1 @16
   SAY NAME2 @17
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_undesc_to_update = "@18" END 
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@19" END
     APPEND ~tooltip.2da~ ~VOLCANO    -1    15211    45054~
 
-COPY ~VOLCANO/cre/zodesak.cre~            ~override/zodesak.cre~        
+COPY ~VOLCANO/cre/zodesak.cre~            ~override/zodesak.cre~
   SAY NAME1 @20 
   SAY NAME2 @20
 
-COPY ~VOLCANO/item/BAVOLBA.ITM~		~override/BAVOLBA.ITM~        
+COPY ~VOLCANO/item/BAVOLBA.ITM~        ~override/BAVOLBA.ITM~
   SAY NAME2 @22
   LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@23" END
 
 EXTEND_TOP ~ar5500.bcs~ ~volcano/baf/ar5500e.baf~
     EVALUATE_BUFFER
 
-COPY ~volcano/sto/ZODESAK.sto~		~override/ZODESAK.sto~
+COPY ~volcano/sto/ZODESAK.sto~        ~override/ZODESAK.sto~
 SAY STORE_NAME @24
 
 COMPILE ~volcano/d/ZODESAK.d~
@@ -190,17 +183,18 @@ COMPILE ~volcano/d/ZODESAK.d~
 
 // Additions
 
-COPY_EXISTING ~ZODESAK.sto~ ~override/ZODESAK.sto~  // adds missing items to Zodesak shop
-	
-	LPF ADD_STORE_ITEM_EX
-	  INT_VAR stack=3 
+COPY_EXISTING ~ZODESAK.sto~ ~override/ZODESAK.sto~ // adds missing items to Zodesak shop
+    
+    LPF ADD_STORE_ITEM_EX
+      INT_VAR stack=3 
         STR_VAR item_name=~BAVOL05~ position=~AFTER BAVOL04~ flags=~identified~ // Indicates the position AFTER or BEFORE of a given item in a store inventory (just look in NearInfinity for their locations) in this case BAVOL04...
       END
     BUT_ONLY
 
-/*	LPF ADD_STORE_ITEM_EX
-	  INT_VAR stack=5   // Indique le nombre d'objet à la vente
+/*    
+    LPF ADD_STORE_ITEM_EX
+      INT_VAR stack=5 // Indique le nombre d'articles en vente
         STR_VAR item_name=~RTT038~ position=~AFTER SCRLB04~ flags=~identified~ // Indique la position AFTER ou BEFORE tel ou tel objet dans l'inventaire d'un magasin (il suffit de regarder dans NearInfinity leurs emplacements) dans ce cas AROW01...
       END
     BUT_ONLY
-	*/
+*/
