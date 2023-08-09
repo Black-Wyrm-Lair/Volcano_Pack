@@ -4,7 +4,7 @@
 
 **Autor** : **Baronius**
 
-Spells and Items for BGII: Throne of Bhaal, Baldur's Gate II: EE and the Enhanced Edition Trilogy (EET).
+Spells and Items for BGII: Throne of Bhaal, Baldur's Gate II: EE, and the Enhanced Edition Trilogy (EET).
 
 
 [Link to Mod Forum at The Black Wyrm's Lair](http://forums.blackwyrmlair.net/index.php?showtopic=5525)
@@ -16,11 +16,11 @@ Spells and Items for BGII: Throne of Bhaal, Baldur's Gate II: EE and the Enhance
 ------------
 
 This spell&item pack adds a merchant to the village of Amkethran.
-This man (looks like a soldier) will stand near the Temple of Waukeen.
+This man (who looks like a soldier) will stand near the Temple of Waukeen.
 He offers extremely powerful spells and items, of course for a high price. 
 
-(Note: such a very very powerful item content seems be popular for many players,
-but it does not reflect my notion of a mod that conforms with the game balance. 
+(Note: such a very very powerful item content seems to be popular for many players,
+but it does not reflect my notion of a mod that conforms to the game balance. 
 
 That is, I do not consider this mod as balanced in terms of the original game balance.
 
@@ -35,7 +35,7 @@ to your BG2 directory (e.g. C:\BGII) and run setup-volcano.exe.
 A successful installation ends with this message:
 SUCCESSFULLY INSTALLED[Improved Volcano Pack]
 Important note:  After the installation, do not delete 
-setup-volcano.exe, setup-volcano.tp2, or any files in Volcano folder:
+setup-volcano.exe, setup-volcano.tp2, or any files in the Volcano folder:
 they are needed for the uninstallation/reinstallation of this pack.
 
 You can easily uninstall or reinstall this pack if you run setup-volcano.exe
@@ -46,13 +46,13 @@ Improved Volcano! Pack is installed)
 ## Version History:
 ----------------
 
-Version 2.5 (15 march 2023)
+Version 2.5 (15 March 2023)
 - Added EE / EET compatibility (Handle Charset and GW_fonction)
 - Correct SCRLB05.ITM was not purchasable in store
 - Added description for ANGBOW.ITM if call with CLUAConsole
 - Added more existing scrolls in stock
 - Added Readme.md
-- Added french translation
+- Added French translation
 - Correct German setup.tra
 - Prefixes BAVOL
 - Add InfinityAutoPackager
