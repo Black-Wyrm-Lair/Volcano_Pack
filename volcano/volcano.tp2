@@ -27,7 +27,6 @@ ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
         reload_array = fl#reload
     END
 
-
 INCLUDE ~volcano/lib/gw_functions.tpa~
 
 END // of ALWAYS block
@@ -179,7 +178,6 @@ COPY ~volcano/sto/ZODESAK.sto~        ~override/ZODESAK.sto~
 SAY STORE_NAME @24
 
 COMPILE ~volcano/d/ZODESAK.d~
-
 
 // Additions
 
